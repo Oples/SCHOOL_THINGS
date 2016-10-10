@@ -71,7 +71,7 @@ public class RANDOM_game {
         int done = 1;
         do
         {
-            System.out.print("E' questo il tuo nome? "+username+"(y/n): ");
+            System.out.print("E' questo il tuo nome? "+username+" (y/n): ");
             String si_no = Ins.input_name();
             if(si_no=="y" || si_no=="Y")
             {
