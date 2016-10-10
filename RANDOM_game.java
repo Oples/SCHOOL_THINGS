@@ -22,7 +22,7 @@ public class RANDOM_game {
         try {
             //creazione file di classifica
             Classifica.file_gen();
-        } catch (Exception e) {
+        } catch (Exception e) { 
             System.out.println("\n-----ERRORE NELLA GENERAZIONE DELLA CLASSIFICA!-----");
         }
         System.out.println("_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-");
