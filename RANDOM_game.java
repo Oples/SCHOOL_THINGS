@@ -67,8 +67,24 @@ public class RANDOM_game {
             }
         }while(guest != numero);
        //aggiunta player classifica
-        System.out.println("Inserisci il tuo nome: (max 8 lettere)");
-        String name = Ins.input_name();
+        String username = System.getProperty("user.name");
+        int done = 1;
+        do
+        {
+            System.out.print("E' questo il tuo nome? "+username+"(y/n): ");
+            String si_no = Ins.input_name();
+            if(si_no=="y" || si_no=="Y")
+            {
+                System.out.println("Bene!\n ora verrai inserito nella classifica!");
+                done = 0;
+            }
+            if(si_no=="n" || si_no=="N")
+            {
+                System.out.println("Inserisci il tuo nome: (max 8 lettere)");
+                String name = Ins.input_name();
+                done = 0;
+            }
+        }while(done!=0)
         int difficulty = chose;
         int tentativi = cont;
         try {
